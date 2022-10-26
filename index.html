@@ -12,26 +12,29 @@
         <h1>Directorios amigos</h1>
     </header>
     <main>
-        <section class="formulario">
+        <section method="POST" class="formulario">
 <h2>agregar amigo</h2>
      <form action="" id="formulario">
    <label for="nombre">nombre:
-   <input type="text" name="nombre">
+   <input type="text" name="nombre" id="nombre">
   </label>
  <label for="telefono">telefono:
-<input type="text" name="telefono">
+<input type="text" name="telefono" id="telefono">
 </label>
 <label for="correo">correo:
-    <input type="mail" name="correo">
+    <input type="mail" name="correo" id="correo">
 </label>
 <label for="foto">foto:
-<input type="text" name="foto">
+<input type="text" name="foto"  id="foto">
      </label>
      <div>
-        <button id="btnGuardar">Guardar</button>
+        <button type="submit" id="btnGuardar"> Guardar</button>
+        <p class="warnings"id="warnings"></p>
         <button id="btnCancelar">Cancelar</button>
      </div>
     </form>
+
+
         </section>
         <section class="lista">
             <h2>Mis amigos</h2>
